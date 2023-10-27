@@ -1,4 +1,4 @@
 [submodule "alex-v1"]
 	path = alex-v1
-	url = git@github.com:alexgo-io/alex-v1.git
+	url = https://github.com/alexgo-io/alex-v1.git
 	branch = main

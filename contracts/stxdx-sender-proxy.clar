@@ -42,7 +42,7 @@
 	(fill (optional uint)))
 	(begin
 		(try! (is-authorised-sender))
-		(as-contract (contract-call? .stxdx-exchange-zero-v1-02 match-orders left-order right-order left-signature right-signature left-oracle-data right-oracle-data fill))
+		(as-contract (contract-call? .stxdx-exchange-zero match-orders left-order right-order left-signature right-signature left-oracle-data right-oracle-data fill))
 	)
 )
 
@@ -58,7 +58,7 @@
 			fill: (optional uint)
 		}
 	))
-	(as-contract (contract-call? .stxdx-exchange-zero-v1-02 match-orders (get left-order matched-orders) (get right-order matched-orders) (get left-signature matched-orders) (get right-signature matched-orders) (get left-oracle-data matched-orders) (get right-oracle-data matched-orders) (get fill matched-orders)))
+	(as-contract (contract-call? .stxdx-exchange-zero match-orders (get left-order matched-orders) (get right-order matched-orders) (get left-signature matched-orders) (get right-signature matched-orders) (get left-oracle-data matched-orders) (get right-oracle-data matched-orders) (get fill matched-orders)))
 )
 
 (define-public (match-orders-many 
