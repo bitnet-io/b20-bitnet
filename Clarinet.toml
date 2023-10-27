@@ -1,0 +1,49 @@
+[project]
+name = "b20"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+
+[repl]
+costs_version = 2
+
+[contracts.redstone-verify]
+path = "contracts/redstone-verify.clar"
+depends_on = []
+
+[contracts.stxdx-exchange-zero]
+path = "contracts/stxdx-exchange-zero.clar"
+depends_on = ["stxdx-registry", "stxdx-utils", "stxdx-wallet-zero", "redstone-verify"]
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.stxdx-registry]
+path = "contracts/stxdx-registry.clar"
+depends_on = []
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.stxdx-sender-proxy]
+path = "contracts/stxdx-sender-proxy.clar"
+depends_on = ["trait-sip-010", "stxdx-wallet-zero", "stxdx-exchange-zero"]
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.stxdx-utils]
+path = "contracts/stxdx-utils.clar"
+depends_on = []
+
+[contracts.stxdx-wallet-zero]
+path = "contracts/stxdx-wallet-zero.clar"
+depends_on = ["trait-sip-010", "stxdx-registry"]
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.trait-ownable]
+path = "alex-v1/clarity/contracts/traits/trait-ownable.clar"
+depends_on = []
+
+[contracts.trait-sip-010]
+path = "alex-v1/clarity/contracts/traits/trait-sip-010.clar"
+depends_on = []
