@@ -8,11 +8,9 @@
 
 # all of the dependencies are here https://github.com/orgs/alexgo-io/repositories
 
-" However, the Licensed Work will eventually be made available
-under an Open Source License, as stated in this License."
+# " However, the Licensed Work will eventually be made available under an Open Source License, as stated in this License."
 
-" However, the front-end which is needed will eventually be made available
-under an Open Source License, as stated in this License."
+# " However, the front-end which is needed will eventually be made available under an Open Source License, as stated in this License."
 
 ```
 Business Source License 1.1
